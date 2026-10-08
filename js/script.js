@@ -57,3 +57,7 @@ function displayResult() {
 
 
 }
+const showResultButton = document.getElementById("show-result");
+
+showResultButton.addEventListener("click", displayResult);
+
