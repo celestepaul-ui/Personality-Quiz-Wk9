@@ -3,7 +3,7 @@ console.log("script.js connected!");
 
 const questions = document.querySelectorAll(".question-block");
 
-let answers = [];
+let answers = {};
 
 questions.forEach(function (question) {
     const answerButtons = question.querySelectorAll(".answer-btn");
@@ -28,7 +28,7 @@ function displayResult() {
     let goldenRetrieverScore = 0;
     let chihuahuaScore = 0;
 
-    answers.forEach(function (answer) {
+    Object.values(answers).forEach(function (answer) {
         if (answer === "A") {
             goldenRetrieverScore++;
         } else if (answer === "B") {
