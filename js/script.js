@@ -46,4 +46,14 @@ function displayResult() {
     } else {
         result = "You are a Chihuahua!";
     }
+
+    const resultText = document.getElementById("result-text");
+
+    resultText.textContent = result;
+
+    const resultContainer = document.getElementById("result-container");
+
+    resultContainer.style.display = "block";
+
+
 }
